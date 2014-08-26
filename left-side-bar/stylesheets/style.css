@@ -1,0 +1,132 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -----------------------------
+
+      BREAKPOINT VARS
+
+----------------------------- */
+header, footer, main, aside {
+  padding: 0 2em; }
+
+header, footer, .wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header:after, footer:after, .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 20em) {
+  header .logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px; } }
+@media screen and (min-width: 64em) {
+  header .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    header .logo:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 20em) {
+  header nav {
+    float: left;
+    display: block;
+    margin-right: 16.03631%;
+    width: 100%; }
+    header nav:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 64em) {
+  header nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    header nav:last-child {
+      margin-right: 0; } }
+header nav ul {
+  padding: 0;
+  margin: 2em 0 0 0; }
+header nav li {
+  display: inline-block;
+  width: 19%; }
+header nav li:last-child {
+  margin-right: 0; }
+header nav a {
+  display: block;
+  text-align: center; }
+
+.wrapper {
+  display: block; }
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+main {
+  float: right;
+  display: block;
+  margin-left: 2.35765%;
+  width: 65.88078%; }
+  main:last-child {
+    margin-left: 0; }
+  @media screen and (min-width: 20em) {
+    main {
+      float: right;
+      display: block;
+      margin-left: 16.03631%;
+      width: 100%; }
+      main:last-child {
+        margin-left: 0; } }
+  @media screen and (min-width: 64em) {
+    main {
+      float: right;
+      display: block;
+      margin-left: 2.35765%;
+      width: 65.88078%; }
+      main:last-child {
+        margin-left: 0; } }
+
+aside {
+  float: right;
+  display: block;
+  margin-left: 2.35765%;
+  width: 31.76157%; }
+  aside:last-child {
+    margin-left: 0; }
+  @media screen and (min-width: 20em) {
+    aside {
+      float: right;
+      display: block;
+      margin-left: 16.03631%;
+      width: 100%; }
+      aside:last-child {
+        margin-left: 0; } }
+  @media screen and (min-width: 64em) {
+    aside {
+      float: right;
+      display: block;
+      margin-left: 2.35765%;
+      width: 31.76157%; }
+      aside:last-child {
+        margin-left: 0; } }
+
+@media screen and (min-width: 20em) {
+  footer .social {
+    margin: 0;
+    padding: 0; } }
+@media screen and (min-width: 64em) {
+  footer .copyright, footer .social {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    footer .copyright:last-child, footer .social:last-child {
+      margin-right: 0; } }
+footer .social li {
+  display: inline; }

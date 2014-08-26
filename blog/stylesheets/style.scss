@@ -1,0 +1,113 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/* -----------------------------
+
+      BREAKPOINT VARS
+
+----------------------------- */
+//0 - 320 PX
+$mobile320: new-breakpoint(max-width 20.000em 2);
+$mobile321: new-breakpoint(min-width 20.000em 2);
+//321 - 480 PX
+$mobile420: new-breakpoint(min-width 20.063em 2);
+//481 - 568 PX
+$mobile568: new-breakpoint(min-width 35.500em 2);
+//569 - 768 PX
+$tablet768: new-breakpoint(min-width 48.00em 4);
+//769 - 1024 PX
+$tablet1024: new-breakpoint(min-width 64.00em 6);
+
+header, footer {
+  padding: 2em;
+}
+header, footer, .wrapper {
+  @include outer-container;
+}
+header {
+  margin-bottom: 3em;
+}
+.logo {
+  @include media($mobile321) {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+  @include media($tablet1024) {
+    @include span-columns(3 of 12);
+  }
+}
+nav {
+  @include media($mobile321) {
+    margin-top: 2em;
+    @include span-columns(2 of 2)
+  }
+  @include media($tablet1024) {
+    @include reset-all;
+    @include span-columns(9 of 12);
+  }
+  ul {
+    margin: 0; padding: 0;
+  }
+  li {
+    display: inline-block;
+    width: 19%;
+  }
+  a {
+    display: block;
+    text-align: center;
+  }
+}
+main {
+  @include media($mobile321) {
+    padding: 2em;
+    @include span-columns(2 of 2);
+  }
+  @include media($tablet1024) {
+    @include reset-all;
+    padding: 0;
+    @include span-columns(8 of 12);
+  }
+}
+article {
+  @include media($mobile321) {
+    margin: 0 auto;
+    width: 90%;
+  }
+  @include media($tablet1024) {
+    @include reset-all;
+    margin-bottom: 5em;
+    p {
+      max-width: 600px;
+    }
+  }
+  img {
+      height: auto;
+      max-width: 600px;
+      width: 100%;
+    }
+}
+aside {
+  @include media($tablet1024) {
+    @include reset-all;
+    @include span-columns(4 of 12);
+  }
+  .related {
+    clear: both;
+    margin: 0 0 1em 0;
+    min-height: 65px;
+  }
+  figure {
+    float: left;
+    margin: 0 2em 0 0;
+  }
+}
+
+footer {
+  .copyright, .social {
+    @include span-columns(6);
+  }
+  .social li {
+    display: inline;
+  }
+}

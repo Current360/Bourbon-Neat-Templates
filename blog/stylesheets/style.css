@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -----------------------------
+
+      BREAKPOINT VARS
+
+----------------------------- */
+header, footer {
+  padding: 2em; }
+
+header, footer, .wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header:after, footer:after, .wrapper:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+header {
+  margin-bottom: 3em; }
+
+@media screen and (min-width: 20em) {
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px; } }
+@media screen and (min-width: 64em) {
+  .logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    .logo:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 20em) {
+  nav {
+    margin-top: 2em;
+    float: left;
+    display: block;
+    margin-right: 16.03631%;
+    width: 100%; }
+    nav:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 64em) {
+  nav {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%; }
+    nav:last-child {
+      margin-right: 0; } }
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  display: inline-block;
+  width: 19%; }
+nav a {
+  display: block;
+  text-align: center; }
+
+@media screen and (min-width: 20em) {
+  main {
+    padding: 2em;
+    float: left;
+    display: block;
+    margin-right: 16.03631%;
+    width: 100%; }
+    main:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 64em) {
+  main {
+    padding: 0;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    main:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 20em) {
+  article {
+    margin: 0 auto;
+    width: 90%; } }
+@media screen and (min-width: 64em) {
+  article {
+    margin-bottom: 5em; }
+    article p {
+      max-width: 600px; } }
+article img {
+  height: auto;
+  max-width: 600px;
+  width: 100%; }
+
+@media screen and (min-width: 64em) {
+  aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    aside:last-child {
+      margin-right: 0; } }
+aside .related {
+  clear: both;
+  margin: 0 0 1em 0;
+  min-height: 65px; }
+aside figure {
+  float: left;
+  margin: 0 2em 0 0; }
+
+footer .copyright, footer .social {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  footer .copyright:last-child, footer .social:last-child {
+    margin-right: 0; }
+footer .social li {
+  display: inline; }

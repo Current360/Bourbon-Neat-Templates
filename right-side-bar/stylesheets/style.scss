@@ -1,0 +1,96 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/* -----------------------------
+
+      BREAKPOINT VARS
+
+----------------------------- */
+//0 - 320 PX
+$mobile320: new-breakpoint(max-width 20.000em 2);
+$mobile321: new-breakpoint(min-width 20.000em 2);
+//321 - 480 PX
+$mobile420: new-breakpoint(min-width 20.063em 2);
+//481 - 568 PX
+$mobile568: new-breakpoint(min-width 35.500em 2);
+//569 - 768 PX
+$tablet768: new-breakpoint(min-width 48.00em 4);
+//769 - 1024 PX
+$tablet1024: new-breakpoint(min-width 64.00em 6);
+
+header, footer {
+  padding: 0 2em;
+}
+header, footer, .wrapper { @include outer-container; }
+
+header {
+  .logo {
+    @include media($mobile321) {
+      display: block;
+      margin: 0 auto;
+      width: 100px;
+    }
+    @include media($tablet1024) {
+      @include reset-all;
+      @include span-columns(3 of 12);
+    }
+  }
+  nav {
+    @include media($mobile321) {
+      @include span-columns(2 of 2);
+    }
+    @include media($tablet1024) {
+      @include reset-all;
+      @include span-columns(9 of 12);
+    }
+    ul {
+      padding: 0;
+      margin: 2em 0 0 0;
+    }
+    li {
+      display: inline-block;
+      width: 19%;
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+main {
+  padding: 0 2em;
+  @include media($mobile321) {
+    @include span-columns(2 of 2)
+  }
+  @include media($tablet1024) {
+    @include reset-all;
+    @include span-columns(8 of 12);
+  }
+}
+aside { @include span-columns(4 of 12); }
+
+footer {
+  @include media($mobile321) {
+    .copyright, .social {
+      @include span-columns(2 of 2);
+    }
+  }
+  @include media($tablet1024) {
+    .copyright, .social {
+      @include reset-all;
+      @include span-columns(6 of 12);
+    }
+  }
+  .social {
+      padding: 0;
+      margin: 0;
+    }
+  .social li {
+    display: inline;
+  }
+
+}
